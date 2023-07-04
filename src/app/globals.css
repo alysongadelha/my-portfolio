@@ -2,26 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
+.btn {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    92.23deg,
+    #ff0000 21.43%,
+    #ff3333 50.63%,
+    #ff9999 100%,
+    #ffcccc 117.04%
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 255, 255, 0.51);
+}
+
+.just-shadow {
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 255, 255, 0.51);
+}
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #ffcccc 21.43%,
+    #ff9999 50.63%,
+    #ff3333 100%,
+    #ff0000 117.04%
+  );
+}
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #ff0000 21.43%,
+    #ff3333 50.63%,
+    #ff9999 100%,
+    #ffcccc 117.04%
+  );
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply mb-6 font-primary text-[32px] uppercase tracking-[10%];
+  }
+  .h3 {
+    @apply mb-6 font-primary text-[26px] font-semibold leading-[46px];
+  }
+  .btn {
+    @apply rounded-full font-primary font-medium text-white;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#ff0000] to-[#ffcccc] bg-clip-text font-primary font-bold text-transparent hover:from-[#ffcccc] hover:to-[#ff0000];
+  }
+  .section {
+    @apply flex items-center py-8 lg:h-screen lg:py-24;
+  }
 }
