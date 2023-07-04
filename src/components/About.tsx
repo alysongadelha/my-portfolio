@@ -19,7 +19,7 @@ const About = (props: Props) => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className='h-[640px] flex-1 overflow-hidden rounded-lg bg-about bg-contain bg-top bg-no-repeat mix-blend-lighten'
+            className=' hidden flex-1 overflow-hidden rounded-lg bg-contain bg-top bg-no-repeat mix-blend-lighten lg:flex lg:h-[640px] lg:bg-about'
           ></motion.div>
           {/* Text */}
           <motion.div
