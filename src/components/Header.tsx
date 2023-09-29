@@ -15,7 +15,11 @@ const Header = (props: Props) => {
               className='just-shadow rounded-md'
             />
           </a>
-          <button className='btn btn-sm'>Work with me</button>
+          <button className='btn btn-sm'>
+            <a href='https://my-blog-topaz-seven.vercel.app/' target='_blank'>
+              Come visit my blog
+            </a>
+          </button>
         </div>
       </div>
     </header>
