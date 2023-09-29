@@ -60,7 +60,7 @@ const Services = (props: Props) => {
                 href='https://github.com/alysongadelha?tab=repositories'
                 target='_blank'
               >
-                See my work
+                See my works
               </a>
             </button>
           </motion.div>
@@ -72,35 +72,6 @@ const Services = (props: Props) => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1'
           >
-            {/* service list */}
-            {/* <div>
-              {services.map(({ name, description, link }: Service, index) => (
-                <div
-                  className='mb-[38px] flex h-[146px] border-b border-white/20'
-                  key={index}
-                >
-                  <div className='max-w-[476px]'>
-                    <h4 className='mb-6 font-primary text-[20px] font-semibold tracking-wide'>
-                      {name}
-                    </h4>
-                    <p className='font-secondary leading-tight'>
-                      {description}
-                    </p>
-                  </div>
-                  <div className='flex flex-1 flex-col items-end'>
-                    <a
-                      href='#'
-                      className='btn mb-[42px] flex h-9 w-9 items-center justify-center'
-                    >
-                      <BsArrowUpRight />
-                    </a>
-                    <a href='#' className='text-gradient text-sm'>
-                      {link}
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div> */}
             <Skills />
           </motion.div>
         </div>

@@ -4,6 +4,7 @@ import { fadeIn } from '@/utils/variants';
 import Img1 from '@public/images/portfolio-drlysn1.png';
 import Img2 from '@public/images/portfolio-drlysn2.png';
 import Img3 from '@public/images/portfolio-drlysn3.png';
+import Img4 from '@public/images/portfolio-drlysn4.png';
 import Image from 'next/image';
 
 type Props = {};
@@ -58,6 +59,25 @@ const Work = (props: Props) => {
                 <span className='text-3xl text-white'>
                   Photography Portfolio
                 </span>
+              </div>
+            </div>
+            {/* image */}
+            <div className='group relative overflow-hidden rounded-xl border-2 border-white/50'>
+              {/* Overlay */}
+              <div className='absolute z-40 h-full w-full transition-all duration-300 group-hover:bg-black/70'></div>
+              {/* img */}
+              <Image
+                className='transition-all duration-500 group-hover:scale-125'
+                src={Img4}
+                alt=''
+              />
+              {/* Pretitle */}
+              <div className='absolute -bottom-full left-12 z-50 transition-all duration-500 group-hover:bottom-24'>
+                <span className='text-gradient'>NextJs/GraphQL</span>
+              </div>
+              {/* title */}
+              <div className='absolute -bottom-full left-12 z-50 transition-all duration-700 group-hover:bottom-14'>
+                <span className='text-3xl text-white'>My Blog</span>
               </div>
             </div>
           </motion.div>
